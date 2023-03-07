@@ -21,18 +21,6 @@ class mySolution:
         change_0 = mySolution.minFlipsMonoIncr(self, s[:last_one+1]) + (len(s)-1) - last_one  # plus the number of 1 at the end
         return min(change_0, change_1)
 
-solu = mySolution()
-s = "100101111011110111000010110100101000101"
-print(mySolution.minFlipsMonoIncr(solu, s))
-
-class Solution() :
-    def minFlipsMonoIncr(self, s) :
-        left = 0
-        right = len(s)
-        while left < len(s) - 1 :
-            a = s[:left+1]
-            b = s[left+1:]
-    
         
         
         

@@ -1,5 +1,5 @@
 class Solution:
-    def maxProfit(self, prices):
+    def maxProfit(self, prices) :
         max_profit = 0
         min_price = prices[0]
         for i in range(len(prices)) :
