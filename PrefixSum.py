@@ -10,7 +10,7 @@ def prefix_sum(nums) :
     second = [x + first_sum for x in prefix_sum(nums[mid+1:])]
     return first + second
     
-    
+
 
 nums = [1,1,1,1,1]
 print(prefix_sum(nums))
