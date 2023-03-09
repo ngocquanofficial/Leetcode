@@ -34,9 +34,3 @@ class Solution:
                 
             
 
-
-        
-arr =[1, 2, 3, 4]
-k = 2
-solution = Solution()
-print(solution.findKthPositive(arr, k))
