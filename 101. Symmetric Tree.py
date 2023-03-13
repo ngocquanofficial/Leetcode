@@ -22,12 +22,12 @@ class Solution:
 # When left, right not None
 
         # Base case, for symmetric leaves of tree
-        if left.left == None and left.right == None :
-            return (right.left == None) and (right.right == None)
+        # if left.left == None and left.right == None :
+        #     return (right.left == None) and (right.right == None)
         
-        if left.left == None : # And left.right != None :
-            return (right.right == None) and self.symmetric_node(left.right, right.left)
+        # if left.left == None : # And left.right != None :
+        #     return (right.right == None) and self.symmetric_node(left.right, right.left)
 
-        if left.right == None :
-            return (right.left == None) and self.symmetric_node(left.left, right.right)
+        # if left.right == None :
+        #     return (right.left == None) and self.symmetric_node(left.left, right.right)
         return self.symmetric_node(left.left, right.right) and self.symmetric_node(left.right, right.left)
