@@ -1,3 +1,2 @@
-a = 'abc'
-b = a[::-1]
-print(b)
+a = [0] * 5
+print(min(a))

@@ -14,6 +14,3 @@ class Solution:
             
         return maximum
     
-solution = Solution()
-num = 1234
-print(solution.splitNum(num=num))
