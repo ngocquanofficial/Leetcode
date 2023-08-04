@@ -13,8 +13,3 @@ class Solution:
                 first += 1
         output = [first + 1, last + 1]
         return output
-
-
-print("!!!")
-obj = Solution()
-print(obj.twoSum([1, 2, 3], 2))
