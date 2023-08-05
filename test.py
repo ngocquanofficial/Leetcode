@@ -25,7 +25,7 @@ class Solution:
                 print("3!")
         # The case i + i + j = 0
         for i in distinct_value:
-            if -2 * i not in time_appear:
+            if -2 * i not in time_appear or i == 0 :
                 continue
             # Here is the satisfy solution
             i_indices = time_appear[i]
