@@ -25,9 +25,3 @@ class Solution:
                     if element[0] > b:  # Due to b < c
                         ans += 1
         return ans
-
-
-obj = Solution()
-
-arr = [3, 3, 6, 4, 5]
-print(obj.countQuadruplets(arr))
