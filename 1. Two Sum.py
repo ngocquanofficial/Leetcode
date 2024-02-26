@@ -18,28 +18,18 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        set_nums = set(nums)
-
-        first_ind = -1
-
-        second_ind = -1
-
+        hash_map = dict()
         for i, num in enumerate(nums) :
-            if target - num in set_nums :
-
-                first_ind = i
-
-                second_num = target - num
-                break
-        print(first_ind)
-        # The first num must be found befor the second num
-        for i, num in enumerate(nums[first_ind+1 :]) :
-            if num == second_num :
-                second_ind = i
-                return [first_ind, second_ind]
-
-            
-
+            if target - num in hash_map :
+                # if target - num in hash_map, this means num is the second number
+                return [hash_map[target - num], i]
+            else : # not found target - num yet, then continue to discover, hope to see target - num in the future :)
+                hash_map[num] = i
+     
+nums = [3,2,4]
+target = 6
+obj = Solution()
+print(obj.twoSum(nums, target))
 
 
 
