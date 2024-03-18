@@ -25,7 +25,7 @@ class Solution(object):
                 return [hash_map[target - num], i]
             else : # not found target - num yet, then continue to discover, hope to see target - num in the future :)
                 hash_map[num] = i
-     
+    
 nums = [3,2,4]
 target = 6
 obj = Solution()
