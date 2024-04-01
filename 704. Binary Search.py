@@ -1,3 +1,40 @@
+### UPDATE 1.4.2024: Using Binary Search Idea
+class Solution(object):
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        def partial(min, max) :
+            if min > max :
+                return -1
+            if min == max : 
+                if nums[min] == target :
+                    return min
+                else :
+                    return -1
+
+            mid = (max - min) // 2 + min
+
+            if nums[mid] == target :
+                return mid
+            
+            if nums[mid] > target :
+                return partial(min, mid - 1)
+
+            if nums[mid] < target :
+                return partial(mid + 1, max)
+        
+        return partial(0, len(nums) - 1)
+        
+
+
+
+
+
+
+
 class Solution:
     def search(self, nums, target):
         start = 0
@@ -23,3 +60,6 @@ class Solution:
             return end
         else:
             return -1
+        
+
+### UPDATE
